@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\my-react-app-backend",
+    "\\my-react-app-backend\\nodejs_backend"
   ],
+  "SelectedNode": "\\my-react-app-backend\\nodejs_backend",
   "PreviewInSolutionExplorer": false
 }

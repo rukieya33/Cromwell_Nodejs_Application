@@ -1,0 +1,3 @@
+D:\Cromwell_Nodejs_Application\Cromwell_Nodejs_Application\my-react-app-backend\nodejs_backend\obj\Debug\nodejs_backend.njsproj.AssemblyReference.cache
+D:\Cromwell_Nodejs_Application\Cromwell_Nodejs_Application\my-react-app-backend\nodejs_backend\obj\Debug\nodejs_backend.njsproj.CoreCompileInputs.cache
+D:\Cromwell_Nodejs_Application\Cromwell_Nodejs_Application\my-react-app-backend\nodejs_backend\bin\Microsoft.NodejsTools.WebRole.dll
