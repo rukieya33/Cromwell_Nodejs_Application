@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react'
+
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import Register from './Register/Register.js';
 import Home from './Home/Home.js';
@@ -15,14 +15,14 @@ function App() {
           <h1 id="appTitle">C Cromwell </h1>
           <BrowserRouter>
           <Routes>
-              <Route path="home" element={<Home />} />
+              <Route exact path="/" element={<Home />} />
               <Route path="landing-page" element={<LandingPage />} />
               <Route path="register" element={<Register />} />
               <Route path="login" element={<Login />} />
           </Routes>
 
           <ul>
-          <li><Link to="/home"><h2 id="homeText">Home</h2></Link></li>
+          <li><Link to="/"><h2 id="homeText">Home</h2></Link></li>
            <li><Link to="/landing-page"><h2 id="landingPageText" >Landing Page</h2></Link></li>
           <li><Link to="/register"><h2 id="registerText">Register</h2></Link></li>
           <li><Link to="/login"><h2 id="loginText">Login</h2></Link></li>
