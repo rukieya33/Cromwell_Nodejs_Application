@@ -11,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <header>
-          <h2 id="appTitle">Full stack Nodejs App (Frontend) </h2>
+          
+          <h1 id="appTitle">C Cromwell </h1>
           <BrowserRouter>
           <Routes>
               <Route path="home" element={<Home />} />
@@ -21,16 +22,17 @@ function App() {
           </Routes>
 
           <ul>
-          <li><Link to="/home" }><h2 id="homeText">Home</h2></Link></li>
-           <li><Link to="/landing-page" }><h2 id="landingPageText" >Landing Page</h2></Link></li>
-          <li><Link to="/register" }><h2 id="registerText">Register</h2></Link></li>
-          <li><Link to="/login"  }><h2 id="loginText">Login</h2></Link></li>
+          <li><Link to="/home"><h2 id="homeText">Home</h2></Link></li>
+           <li><Link to="/landing-page"><h2 id="landingPageText" >Landing Page</h2></Link></li>
+          <li><Link to="/register"><h2 id="registerText">Register</h2></Link></li>
+          <li><Link to="/login"><h2 id="loginText">Login</h2></Link></li>
           </ul>
 
          </BrowserRouter>
       </header>
       <footer>
-      &copy;
+
+     2024 Copyright &copy;
       </footer>
     </div>
   );

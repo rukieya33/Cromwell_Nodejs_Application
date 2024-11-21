@@ -1,1 +1,109 @@
-﻿
+﻿.Register form {
+    position: relative;
+    bottom:0.5rem;
+    left:35rem;
+    background-color:white;
+    padding:3rem;
+    width:30rem;
+    height:40rem;
+    border: 2rem solid darkblue;
+    margin-top:5rem;
+    margin-bottom:5rem;
+  
+    
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    left:15rem;
+    bottom:2rem;
+}
+
+    .tooltip:after {
+        content: "Password must have the following:"
+                " - A minimum of 8 characters long "
+                " - At least one upper case character "
+                " - At least one lower case character "
+                " - At least one number "
+                " - At least one special character ";
+            
+        position:absolute;
+        top: -30px;
+        right: 0;
+        left: 0;
+        width:10rem;
+        display: none;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .tooltip:hover:after {
+        display: block;
+    }
+ Form h2 {
+    position: relative;
+    bottom:2rem;
+    text-align:center;
+}
+
+ form input{
+   display: flex;
+   flex-direction: column;
+   flex-wrap:wrap;
+   position:relative;
+   left:9rem;
+   bottom:0.5rem;
+   width:17rem;
+   height:2rem;
+ }
+form button {
+    position:relative;
+    top: 4rem;
+    border:none;
+    background-color:darkblue;
+    color:white;
+    width:20rem;
+    height:5rem;
+    font-size:1rem;
+    border-radius:0.5rem;
+}
+.signin{
+    position:relative;
+    top:3rem;
+
+}
+form p {
+    position: relative;
+    top: 3rem;
+}
+form label {
+    font-size: 1.1rem;
+    top: 1.5rem;
+}
+form label[for=first], label[for=last-name]{
+    position:relative;
+    right:10rem;
+
+}
+form label[for=email]{
+    position: relative;
+    right: 10rem;
+    
+}
+
+form label[for=new-password] {
+    position: relative;
+    right: 10rem;
+    
+}
+
+form label[for=confirm-password] {
+    position: relative;
+    right: 10rem;
+   
+}
