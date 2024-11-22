@@ -1,6 +1,6 @@
 import './Register.css';
-import { useState, useEffect } from 'react';
-import {Link } from 'react-router-dom';
+import {useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 function Register() {
     const [firstName, SetFirstName] = useState("");
@@ -8,7 +8,15 @@ function Register() {
     const [email, SetEmail] = useState("");
     const [newPassword, SetNewPassword] = useState("");
     const [confirmPassword, SetConfirmPassword] = useState("");
-
+    const navigate = useNavigate();
+    let message = " ";
+    const personalDetails = {
+        firstName,
+        lastName,
+        email,
+        newPassword,
+        confirmPassword
+    }
     const validateUserRegistration = () => {
         let isvalid = false;
         if (typeof (firstName) == "string" && typeof (lastName) == "string"
@@ -17,9 +25,11 @@ function Register() {
             isvalid = checkPasswordIsValid();
         }
         else {
-            document.querySelector("alert").hidden = false;
+
             setTimeout(() => {
-                document.querySelector("alert").hidden = true;
+                document.getElementsByClassName("Register")[0].innerHTML = `<div className="alert">
+                Please enter your details in text format.
+            </div>`;
             }, 5000)
         }
 
@@ -36,9 +46,9 @@ function Register() {
     const checkPasswordIsValid = () => {
         let valid = false;
 
-        if (newPassword.length === 8 && newPassword.match(/[a-z]+/g)
-            && newPassword.match(/[0-9]+/i) && newPassword.match(/[A-Z]+/g) &&
-            newPassword.match(/[£$%^&*!()""¬``<>?/.,@#~;:{}|+=-_]+/i)) {
+        if (newPassword.length >= 8 && firstName >= 5 && lastName >= 5 && email >= 5 && newPassword.match(/[a-z]+/g)
+            && newPassword.match(/[0-9]+/) && newPassword.match(/[A-Z]+/g) &&
+            newPassword.match(/[£$%^&*!()""¬``<>?.,@#~;:{}|+=-_]+/g) && newPassword.matchAll(confirmPassword)) {
             valid = true;
         }
         else {
@@ -48,59 +58,55 @@ function Register() {
         return valid;
     }
     let isvalid = validateUserRegistration();
-    
-        useEffect(() => {
 
-            if (isvalid) {
-                registerUser();
-            }
+    useEffect(() => {
+
+        if (isvalid) {
+            registerUser();
+        }
+    })
+
+    const registerUser = async () => {
+
+        await axios.post("http://localhost:1337/user/register",
+            personalDetails
+        ).then((res) => {
+
+            message = res.data.message;
+            document.querySelector(".message").write = `<div className="message" >
+                ${message}
+            </div>`;
+            navigate("/login");
+            console.log(res.data.message)
+
+           
+
+
+        }).catch((err) => {
+       
+            console.log(err)
         })
-
-    const registerUser = () => {
-        try {
-            axios.post("http://localhost:1337/register", {
-                firstN: firstName,
-                lastN: lastName,
-                email: email,
-                psw: newPassword
-            }).then((res) => {
-                console.log(res.data);
-            }).catch((e) => {
-                console.log(e);
-            })
-        }
-        catch (e) {
-            console.log(e);
-        }
     }
     return (
         <div className="Register">
-            <div className="alert" hidden>
-                Please enter your details in text format.
-            </div>
+          
 
-            <form>
+            <form onSubmit={(e) => e.preventDefault()} method="POST">
                 <h2>Register Form</h2>
-                <label for="first"><b>First Name:</b> </label>
+                <label htmlFor="first"><b>First Name:</b> </label>
                 <input type="text" id="first" required placeholder="Enter First Name" value={firstName} onChange={(e) => SetFirstName(e.target.value)}></input>
-                <label for="last-name"><b>Last Name:</b> </label>
+                <label htmlFor="last-name"><b>Last Name:</b> </label>
                 <input type="text" id="last-name" required placeholder="Enter Last Name" value={lastName} onChange={(e) => SetLastName(e.target.value)}></input>
-                <label for="email"><b>Email:</b> </label>
+                <label htmlFor="email"><b>Email:</b> </label>
                 <input type="email" id="email" required placeholder="Enter Email" value={email} onChange={(e) => SetEmail(e.target.value)}></input>
-                <label for="new-password"><b>Password:</b> </label>
-
-
-
+                <label htmlFor="new-password"><b>Password:</b> </label>
                 <input type="password" id="new-password" required placeholder="New Password" value={newPassword} onChange={(e) => SetNewPassword(e.target.value)}></input>
-                <div className="tooltip">
-                    Info
-                </div>
-
-                <label for="confirm-password"><b>Confirm:</b> </label>
+                <div className="tooltip">info</div>
+                <label htmlFor="confirm-password"><b>Confirm:</b> </label>
                 <input type="password" id="confirm-password" required placeholder="Confirm Password" value={confirmPassword} onChange={(e) => SetConfirmPassword(e.target.value)} ></input>
                 <p>By signing up you agree to our <a href="/">Terms & Conditions</a>.</p>
-                <button onClick={registerUser}><b>Sign Up</b></button>
-                <div class="signin">
+                <input type="submit" onClick={registerUser} value="Sign Up"></input>
+                <div className="signin">
                     <p>Already have an account? <Link to="/login">Sign in</Link>.</p>
                 </div>
             </form>

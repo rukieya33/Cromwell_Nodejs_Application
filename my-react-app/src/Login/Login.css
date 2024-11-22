@@ -1,0 +1,105 @@
+﻿.Login form {
+    position: relative;
+    bottom: 0.5rem;
+    left: 35rem;
+    background-color: white;
+    padding: 3rem;
+    width: 30rem;
+    height: 40rem;
+    border: 2rem solid darkblue;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.Login input[type = submit] {
+    position: relative;
+    top: 10rem;
+    left: 5.5rem;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 300;
+}
+
+
+.Login Form h2 {
+    position: relative;
+    top: 2rem;
+    text-align: center;
+}
+
+.Login form input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 9rem;
+    top: 5rem;
+    width: 17rem;
+    height: 2rem;
+}
+
+.Login .signup {
+    position: relative;
+    top: 5rem;
+}
+
+.Login form p {
+    position: relative;
+    top: 10rem;
+}
+
+.Login form label {
+    font-size: 1.1rem;
+    top: 7rem;
+}
+
+/* // extra small devices */
+@media only screen (max-width: 575.98px) {
+    Login form, input[type = submit], form h2, form input, .signup, form p,
+    form label {
+        width: 100px;
+        height: 20px;
+    }
+}
+
+
+/* // small devices */
+@media only screen (min-width: 576px) and (max-width: 767.98px) {
+    .Login form, input[type = submit], form h2, form input, .signup, form p,
+    form label {
+        width: 13%;
+        height: 6.5%;
+    }
+}
+/* // medium devices */
+@media only screen (min-width: 768px) and (max-width: 991.98px) {
+    .Login form, input[type = submit], form h2, form input, .signup, form p,
+    form label {
+        width: 25%;
+        height: 12.5%;
+    }
+}
+/* // large devices */
+@media only screen (min-width: 992px) and (max-width: 1199.98px) {
+    .Login form, input[type = submit], form h2, form input, .signup, form p,
+    form label {
+        width: 50%;
+        height: 25%;
+    }
+}
+
+/* // extra large devices  */
+@media only screen (min-width: 1200px) {
+    .Login form, input[type = submit], form h2, form input, .signup, form p,
+    form label {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+   
