@@ -9,7 +9,7 @@ function Register() {
     const [newPassword, SetNewPassword] = useState("");
     const [confirmPassword, SetConfirmPassword] = useState("");
     const navigate = useNavigate();
-    let message = " ";
+
     const personalDetails = {
         firstName,
         lastName,
@@ -19,17 +19,14 @@ function Register() {
     }
     const validateUserRegistration = () => {
         let isvalid = false;
-        if (typeof (firstName) == "string" && typeof (lastName) == "string"
-            && typeof (email) == "string" && typeof (newPassword) == "string"
-            && typeof (confirmPassword) == "string") {
+        if (typeof (firstName) == "string" && typeof (lastName) == "string")
+            {
             isvalid = checkPasswordIsValid();
         }
         else {
-
+            document.querySelector(".alert").setAttribute("style", "display:block;");
             setTimeout(() => {
-                document.getElementsByClassName("Register")[0].innerHTML = `<div className="alert">
-                Please enter your details in text format.
-            </div>`;
+                document.querySelector(".alert").setAttribute("style", "display:none;");
             }, 5000)
         }
 
@@ -72,11 +69,25 @@ function Register() {
             personalDetails
         ).then((res) => {
 
-            message = res.data.message;
-            document.querySelector(".message").write = `<div className="message" >
-                ${message}
-            </div>`;
-            navigate("/login");
+
+            if (res["data"]["message"] === "Successful Registration") {
+                document.getElementsByClassName("message")[0].setAttribute("style", "display:block;");
+                setTimeout(() => {
+                    document.getElementsByClassName("message")[0].setAttribute("style", "display:none;");
+                }, 5000)
+                document.getElementsByClassName("message")[0].setAttribute("style", "background-color: green;")
+                document.getElementsByClassName("message")[0].innerHTML = `${res["data"]["message"]}`;
+                navigate("/login");
+            }
+            else {
+                document.getElementsByClassName("message")[0].setAttribute("style", "background-color: red;")
+                document.getElementsByClassName("message")[0].innerHTML = `${res["data"]["message"]}`;
+                document.getElementsByClassName("message")[0].setAttribute("style", "display:block;");
+                setTimeout(() => {
+                    document.getElementsByClassName("message")[0].setAttribute("style", "display:none;");
+                }, 5000)
+            }
+
             console.log(res.data.message)
 
            
@@ -84,13 +95,17 @@ function Register() {
 
         }).catch((err) => {
        
-            console.log(err)
+            console.log(err.response.data)
         })
     }
     return (
         <div className="Register">
-          
-
+            <div className="alert">
+              Please enter first name and last name of string format;
+            </div>
+            <div className="message">
+            Thank you for registering !
+            </div>
             <form onSubmit={(e) => e.preventDefault()} method="POST">
                 <h2>Register Form</h2>
                 <label htmlFor="first"><b>First Name:</b> </label>

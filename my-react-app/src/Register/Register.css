@@ -110,12 +110,16 @@ form label[for=confirm-password] {
    
 }
 
-.alert, .error{
+.alert{
+    display:none;
+    padding: 10rem;
     background-color:red;
     color:black;
 }
 
-.message{
-    background-color:green;
-    color:black;
+.message {
+    display: none;
+    padding: 10rem;
+    background-color: red;
+    color: black;
 }

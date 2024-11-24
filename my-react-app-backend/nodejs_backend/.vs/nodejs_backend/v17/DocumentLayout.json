@@ -3,28 +3,43 @@
   "WorkspaceRootPath": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\RegisterCRUD.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Database\\RegisterCRUD.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\LoginCRUD.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Database\\LoginCRUD.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17DCA05B-DE9A-402B-BAFD-42223C8C6084}|nodejs_backend.njsproj|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{17DCA05B-DE9A-402B-BAFD-42223C8C6084}|nodejs_backend.njsproj|solutionrelative:app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\DBConnection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Database\\DBConnection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\RegisterCRUD.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Database\\RegisterCRUD.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17DCA05B-DE9A-402B-BAFD-42223C8C6084}|nodejs_backend.njsproj|D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -46,32 +61,83 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.js",
+              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\App.js",
+              "RelativeDocumentMoniker": "..\\..\\my-react-app\\src\\App.js",
+              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\App.js",
+              "RelativeToolTip": "..\\..\\my-react-app\\src\\App.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-22T21:34:06.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterCRUD.js",
+              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\RegisterCRUD.js",
+              "RelativeDocumentMoniker": "Database\\RegisterCRUD.js",
+              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\RegisterCRUD.js",
+              "RelativeToolTip": "Database\\RegisterCRUD.js",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-21T15:33:11.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "LoginCRUD.js",
+              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\LoginCRUD.js",
+              "RelativeDocumentMoniker": "Database\\LoginCRUD.js",
+              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\LoginCRUD.js",
+              "RelativeToolTip": "Database\\LoginCRUD.js",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAD8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-23T07:13:15.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "register.js",
+              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\register.js",
+              "RelativeDocumentMoniker": "routes\\register.js",
+              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\register.js",
+              "RelativeToolTip": "routes\\register.js",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-21T15:14:31.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Login.css",
               "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.css",
               "RelativeDocumentMoniker": "..\\..\\my-react-app\\src\\Login\\Login.css",
               "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.css",
               "RelativeToolTip": "..\\..\\my-react-app\\src\\Login\\Login.css",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAADcAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-11-22T19:06:57.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Login.js",
               "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.js",
               "RelativeDocumentMoniker": "..\\..\\my-react-app\\src\\Login\\Login.js",
               "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Login\\Login.js",
               "RelativeToolTip": "..\\..\\my-react-app\\src\\Login\\Login.js",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAACQAAAAoAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-22T14:43:00.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "package.json",
               "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -83,55 +149,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Register.css",
               "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.css",
               "RelativeDocumentMoniker": "..\\..\\my-react-app\\src\\Register\\Register.css",
               "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.css",
               "RelativeToolTip": "..\\..\\my-react-app\\src\\Register\\Register.css",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHcAAAAQAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAswHoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-21T22:17:52.282Z"
+              "WhenOpened": "2024-11-21T22:17:52.282Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterCRUD.js",
-              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\RegisterCRUD.js",
-              "RelativeDocumentMoniker": "Database\\RegisterCRUD.js",
-              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\RegisterCRUD.js",
-              "RelativeToolTip": "Database\\RegisterCRUD.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-21T15:33:11.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Register.js",
               "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.js",
               "RelativeDocumentMoniker": "..\\..\\my-react-app\\src\\Register\\Register.js",
               "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app\\src\\Register\\Register.js",
               "RelativeToolTip": "..\\..\\my-react-app\\src\\Register\\Register.js",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAFEAAAALAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-21T15:21:09.782Z"
+              "WhenOpened": "2024-11-21T15:21:09.782Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "register.js",
-              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\register.js",
-              "RelativeDocumentMoniker": "routes\\register.js",
-              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\register.js",
-              "RelativeToolTip": "routes\\register.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "DBConnection.js",
+              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\DBConnection.js",
+              "RelativeDocumentMoniker": "Database\\DBConnection.js",
+              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\Database\\DBConnection.js",
+              "RelativeToolTip": "Database\\DBConnection.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-21T15:14:31.432Z"
+              "WhenOpened": "2024-11-23T08:01:32.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "login.js",
+              "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\login.js",
+              "RelativeDocumentMoniker": "routes\\login.js",
+              "ToolTip": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\routes\\login.js",
+              "RelativeToolTip": "routes\\login.js",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAYwBMAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-23T07:41:45.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "app.js",
               "DocumentMoniker": "D:\\Cromwell_Nodejs_Application\\Cromwell_Nodejs_Application\\my-react-app-backend\\nodejs_backend\\app.js",
               "RelativeDocumentMoniker": "app.js",

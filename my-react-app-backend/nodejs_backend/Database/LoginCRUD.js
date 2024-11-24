@@ -1,12 +1,6 @@
-const client = require('../Database/DBConnection.js');
+const { client } = require('../Database/DBConnection.js');
+const cryptoJS = require('crypto-js');
 function postLogin(data) {
-
-
-
-
-    var datas = false;
-
-
 
     client.query("Select * from register", (err, result) => {
 
@@ -16,75 +10,74 @@ function postLogin(data) {
             console.error('Error executing query', err);
         }
         else {
-            console.log(result);
-            var emailEncrypted = " ";
-            var pswEncrypted = " ";
+            console.log(result.rows);
+         
             for (var row in result.rows) {
-                var emailEncrypted = row["email"];
-                var pswEncrypted = row["psw"];
+             
 
-                var found = checkAccountExist(emailEncrypted, pswEncrypted);
+                var foundEmail = decryptEmail(result.rows[row].email);
+                var foundPassword = decryptPassword(result.rows[row].psw);
+                console.log(result.rows[row].email)
+                console.log(foundEmail)
+                console.log(data["emailLogin"] == foundEmail)
+                console.log(data["emailLogin"])
+                if (data["emailLogin"] == foundEmail && data["passwordLogin"] == foundPassword) {
 
-                var { email, password } = found;
 
-                if (email == data["email"] && password == data["newPassword"]) {
+                   
+                    return true;
                     
-                    datas =  true;
                 }
                 else {
-                    datas =  false;
-
+                  
+                    return false;
+                   
                 }
-               
+                client.query("INSERT INTO credentials (credentials_id, email, login) values($1,$2,$3)", [Math.round(Math.random() * 1000000000),
+                result.rows[row].email, result.rows[row].psw], (err, result) => {
+
+                    if (err) {
+                        console.log(err)
+                    }
+                    else {
+                        console.log(result.rows)
+                    }
+                })
             }
-            client.query("INSERT INTO credentials (credentials_id, email, psw) values($1,$2,$3)", [Math.round(Math.random() * 1000000000),
-                emailEncrypted, pswEncrypted], (err, result) => {
 
-                if (err) {
-                    console.log(err)
-                }
-                else {
-                    console.log(result)
-                }
-            })
         }
 
     })
 
-    console.log(datas);
-    return datas;
 
+
+
+}
+
+function decryptEmail(email) {
+   
+    const passphrase = 'email444';
+   
+    const bytes = cryptoJS.AES.decrypt(email, passphrase);
+  
+    const originalText = bytes.toString();
+  
+    return originalText;
 }
 
 
 
-function checkAccountExist(email, psw) {
-    const decryptedEmail = () => {
-        const passphrase = 'email444';
-        const bytes = CryptoJS.AES.decrypt(email, passphrase);
-        const originalText = bytes.toString(CryptoJS.enc.Utf8);
-    
-        return originalText;
-    };
-    
-    
-    
-    const decryptedPassword = () => {
-        const passphrase = 'pass333';
-        const bytes = CryptoJS.AES.decrypt(psw, passphrase);
-        const originalText = bytes.toString(CryptoJS.enc.Utf8);
-    
-        return originalText;
-    };
+function decryptPassword(psw) {
+    const passphrase = 'pass333';
+    const bytes = cryptoJS.AES.decrypt(psw, passphrase);
+    const originalText = bytes.toString(cryptoJS.enc.Utf8);
 
-
-    var decryptedObj = {
-        decEmail : decryptedEmail,
-        decPass : decryptedPassword
-    }
-
-    return decryptedObj;
+    return originalText;
 }
 
 
-module.exports = postLogin;
+
+
+
+
+module.exports = { postLogin };

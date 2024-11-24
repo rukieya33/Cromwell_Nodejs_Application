@@ -5,14 +5,13 @@ var router = express.Router();
 var { postRegister } = require('../Database/RegisterCRUD.js');
 router.post('/user/register', function (req, res) {
 
-    
-    console.log(req.body)
+   
     var data = req.body
-    var datas = postRegister(data);
-
-    res.send(res.status);
-    res.send(JSON.stringify(datas) );
-
+    var myarray = [" "]
+    var datas = postRegister(data, myarray);
+   
+    res.send(JSON.stringify({message: datas[1]}));
+    console.log({ message: datas[1]})
 });
 
 

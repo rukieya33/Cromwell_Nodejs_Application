@@ -23,7 +23,7 @@ function App() {
 
           <ul>
           <li><Link to="/"><h2 id="homeText">Home</h2></Link></li>
-           <li><Link to="/landing-page"><h2 id="landingPageText" >Landing Page</h2></Link></li>
+           <li><Link to="/landing-page"><h2 id="landingPageText" >MyDetails</h2></Link></li>
           <li><Link to="/register"><h2 id="registerText">Register</h2></Link></li>
           <li><Link to="/login"><h2 id="loginText">Login</h2></Link></li>
           </ul>

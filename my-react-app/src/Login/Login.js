@@ -1,6 +1,6 @@
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import axios from 'axios';
 function Login() {
 
@@ -11,15 +11,20 @@ function Login() {
         emailLogin,
         passwordLogin
     }
-    useEffect(() => { loginUser() })
+
     const loginUser = async () => {
-        if (emailLogin >= 5 && passwordLogin >= 5) {
+        
 
-
-            var res = await axios.post("http://localhost:1337/user/login", loginDetails);
-            navigate("/")
-            console.log(res.data)
-        }
+            await axios.post("http://localhost:1337/user/login"
+                , loginDetails).then((res) => {
+                if (res.data.message === "Login Successful") {
+                    navigate("/landing-page")
+                }
+            }).catch((err) => {
+                console.log(err)
+            });
+           
+        
     }
 
     return (
