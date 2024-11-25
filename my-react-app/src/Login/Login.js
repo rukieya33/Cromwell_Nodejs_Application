@@ -1,27 +1,42 @@
 import './Login.css';
-import { Link, useNavigate } from 'react-router-dom';
-import { useState} from 'react';
+import { Link, useNavigate} from 'react-router-dom';
+import { useState } from 'react';
 import axios from 'axios';
 function Login() {
-
+  
   const [emailLogin, SetEmailLogin] = useState("")
     const [passwordLogin, SetPasswordLogin] = useState("")
+    
     const navigate = useNavigate()
     const loginDetails = {
-        emailLogin,
-        passwordLogin
+       email: emailLogin,
+       psw: passwordLogin
     }
+
+
 
     const loginUser = async () => {
         
 
             await axios.post("http://localhost:1337/user/login"
                 , loginDetails).then((res) => {
-                if (res.data.message === "Login Successful") {
-                    navigate("/landing-page")
-                }
+                    console.log(res)
+                    if (res.data.message === "Successful") {
+                        console.log(res.data.message)
+                       
+                        localStorage.setItem("currentUser", "true")
+                        //var user = localStorage.getItem("currentUser")
+                        navigate("/landing-page", { state: { email: emailLogin } })
+                        
+                          
+                  
+                        
+                    }
+                    else if (res.data.message === "Unsuccessful") {
+                        console.log(res.data.message)
+                    }
             }).catch((err) => {
-                console.log(err)
+                console.log(err.response.data)
             });
            
         
@@ -31,6 +46,7 @@ function Login() {
 
     <div className="Login">
 
+         
             <form onSubmit={(e) => e.preventDefault()} method="POST">
                   <h2>Login Form</h2>
                  

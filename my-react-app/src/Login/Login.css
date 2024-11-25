@@ -1,7 +1,7 @@
 ﻿.Login form {
     position: relative;
     bottom: 0.5rem;
-    left: 35rem;
+    left: 25rem;
     background-color: white;
     padding: 3rem;
     width: 30rem;
@@ -58,9 +58,21 @@
     top: 7rem;
 }
 
+.alert {
+    display: none;
+    background-color: red;
+    color: black;
+}
+
+.message{
+    display: none;
+    background-color:green;
+    color:black;
+}
 /* // extra small devices */
 @media only screen (max-width: 575.98px) {
-    Login form, input[type = submit], form h2, form input, .signup, form p,
+    
+    .Login form, input[type = submit], form h2, form input, .signup, form p,
     form label {
         width: 100px;
         height: 20px;
@@ -86,7 +98,7 @@
 }
 /* // large devices */
 @media only screen (min-width: 992px) and (max-width: 1199.98px) {
-    .Login form, input[type = submit], form h2, form input, .signup, form p,
+    body, .Login form, input[type = submit], form h2, form input, .signup, form p,
     form label {
         width: 50%;
         height: 25%;

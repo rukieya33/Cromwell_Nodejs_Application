@@ -71,21 +71,12 @@ function Register() {
 
 
             if (res["data"]["message"] === "Successful Registration") {
-                document.getElementsByClassName("message")[0].setAttribute("style", "display:block;");
-                setTimeout(() => {
-                    document.getElementsByClassName("message")[0].setAttribute("style", "display:none;");
-                }, 5000)
-                document.getElementsByClassName("message")[0].setAttribute("style", "background-color: green;")
-                document.getElementsByClassName("message")[0].innerHTML = `${res["data"]["message"]}`;
+              
+               
                 navigate("/login");
             }
             else {
-                document.getElementsByClassName("message")[0].setAttribute("style", "background-color: red;")
-                document.getElementsByClassName("message")[0].innerHTML = `${res["data"]["message"]}`;
-                document.getElementsByClassName("message")[0].setAttribute("style", "display:block;");
-                setTimeout(() => {
-                    document.getElementsByClassName("message")[0].setAttribute("style", "display:none;");
-                }, 5000)
+                console.log(res["data"]["message"])
             }
 
             console.log(res.data.message)
@@ -100,12 +91,7 @@ function Register() {
     }
     return (
         <div className="Register">
-            <div className="alert">
-              Please enter first name and last name of string format;
-            </div>
-            <div className="message">
-            Thank you for registering !
-            </div>
+           
             <form onSubmit={(e) => e.preventDefault()} method="POST">
                 <h2>Register Form</h2>
                 <label htmlFor="first"><b>First Name:</b> </label>

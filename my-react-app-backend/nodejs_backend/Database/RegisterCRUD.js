@@ -20,7 +20,7 @@ function decryptEmail(email) {
 function decryptPassword(password) {
     const passphrase = 'pass333';
     const bytes = cryptoJS.AES.decrypt(password, passphrase);
-    const originalText = bytes.toString(cryptoJS.enc.Utf8);
+    const originalText = bytes.toString();
    
     return originalText;
 }
@@ -32,14 +32,14 @@ function emailEncrypted (email) {
     const passphrase = 'pass444';
     return cryptoJS.AES.encrypt(email, passphrase).toString();
 };
-function hashEmailAndPassword(email, password) {
+function hashEmailAndPassword(data) {
  
     var hashObj = {};
     var email = "";
     var psw = "";
 
-    var email = emailEncrypted(email)
-    var psw = passwordEncrypted(password)
+    var email = emailEncrypted(data["email"])
+    var psw = passwordEncrypted(data["newPassword"])
     hashObj = {
        email: email, 
        password: psw
@@ -56,7 +56,7 @@ function postRegister(data, myarray) {
 
     var t = ["Account Exist", "Successful Registration"]
 
-    var encryptedDetails = hashEmailAndPassword(data["email"], data["newPassword"]);
+    var encryptedDetails = hashEmailAndPassword(data);
 
     var { email, password } = encryptedDetails;
 
