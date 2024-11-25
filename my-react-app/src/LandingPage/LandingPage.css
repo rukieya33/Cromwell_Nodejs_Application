@@ -1,3 +1,37 @@
-﻿body
-{
+﻿.LandingPage {
+    background-color: white;
+   
+    position:relative;
+    top:3rem;
+    border: 2rem solid darkblue;
+
+    color: black;
+}
+.LandingPage h2 {
+   position: relative;
+   right:28rem;
+
+}
+.LandingPage .myDetails div{
+    background-color:darkorange;
+    margin:5rem;
+}
+
+.LandingPage .login-details {
+    position:relative;
+
+    bottom: 2rem;
+}
+.LandingPage button {
+    position: relative;
+    bottom: 2rem;
+    left: 1.5rem;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 300;
 }

@@ -6,13 +6,13 @@ function Login() {
   
   const [emailLogin, SetEmailLogin] = useState("")
     const [passwordLogin, SetPasswordLogin] = useState("")
-    
+
+
     const navigate = useNavigate()
     const loginDetails = {
        email: emailLogin,
        psw: passwordLogin
     }
-
 
 
     const loginUser = async () => {
@@ -23,13 +23,16 @@ function Login() {
                     console.log(res)
                     if (res.data.message === "Successful") {
                         console.log(res.data.message)
-                       
-                        localStorage.setItem("currentUser", "true")
-                        //var user = localStorage.getItem("currentUser")
-                        navigate("/landing-page", { state: { email: emailLogin } })
+                        var first =   sessionStorage.getItem("first")
+                        var last = sessionStorage.getItem("last")
+                        sessionStorage.setItem("currentUser", "true")
+                        sessionStorage.setItem("email", emailLogin)
+                        sessionStorage.setItem('forename', first)
+                        sessionStorage.setItem('surname', last)
+                        navigate("/landing-page")
+
+
                         
-                          
-                  
                         
                     }
                     else if (res.data.message === "Unsuccessful") {

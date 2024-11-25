@@ -21,12 +21,17 @@ router.get('/user', function (req, res) {
             console.log(err)
         }
 
-
         var found = result.rows.filter((element) => decryptEmail(element) == req.params["email"])
-        
-        res.send(JSON.stringify({ datas: result.rows }));
 
-        console.log(found)
+
+        var myarray = []
+
+            
+            res.send(JSON.stringify({ datas: result.rows }));
+
+            console.log(result.rows)
+
+        
     })
 
 

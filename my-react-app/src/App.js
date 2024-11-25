@@ -6,11 +6,10 @@ import Home from './Home/Home.js';
 import Login from './Login/Login.js';
 import LandingPage from './LandingPage/LandingPage.js';
 
-
 function App() { 
     //const [isLoggedin, SetIsLoggedin] = useState(false);
     //const [page, SetPage] = useState("logout");
-   
+
     return (
         
     <div className="App">
@@ -22,9 +21,9 @@ function App() {
                 <BrowserRouter>
                     <Routes>
 
-                        <Route exact path="/" element={<Home  />} />
-                        <Route path="landing-page" element={<LandingPage/> } />} />
-                        <Route path="register" element={<Register />} />
+                        <Route exact path="/" element={<Home/>} />
+                        <Route path="landing-page" element={<LandingPage /> } />
+                        <Route path="register" element={<Register  />} />
                         <Route path="login" element={<Login />} />
               
 

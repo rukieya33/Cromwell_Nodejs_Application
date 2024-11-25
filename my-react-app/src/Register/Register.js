@@ -71,8 +71,8 @@ function Register() {
 
 
             if (res["data"]["message"] === "Successful Registration") {
-              
-               
+                sessionStorage.setItem("first", firstName)
+                sessionStorage.setItem("last", lastName)
                 navigate("/login");
             }
             else {
