@@ -64,30 +64,34 @@ function Register() {
     })
 
     const registerUser = async () => {
-
-        await axios.post("http://localhost:1337/user/register",
-            personalDetails
-        ).then((res) => {
-
-
-            if (res["data"]["message"] === "Successful Registration") {
-                sessionStorage.setItem("first", firstName)
-                sessionStorage.setItem("last", lastName)
-                navigate("/login");
-            }
-            else {
-                console.log(res["data"]["message"])
-            }
-
-            console.log(res.data.message)
-
-           
+        try {
+            await axios.post("http://localhost:1337/user/register",
+                personalDetails
+            ).then((res) => {
 
 
-        }).catch((err) => {
-       
-            console.log(err.response.data)
-        })
+                if (res["data"]["message"] === "Successful Registration") {
+                    sessionStorage.setItem("first", firstName)
+                    sessionStorage.setItem("last", lastName)
+                    navigate("/login");
+                }
+                else {
+                    console.log(res["data"]["message"])
+                }
+
+                console.log(res.data.message)
+
+
+
+
+            }).catch((err) => {
+
+                console.log(err.response.data)
+            })
+        } catch (e) {
+           console.log(e)
+
+        }
     }
     return (
         <div className="Register">

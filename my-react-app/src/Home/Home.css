@@ -1,0 +1,19 @@
+﻿.Home button {
+   
+    position: relative;
+    top: 2rem;
+    left:0.5rem;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 300;
+    
+}
+.Home{
+    position: relative;
+    top: 5rem;
+}

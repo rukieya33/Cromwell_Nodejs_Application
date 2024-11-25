@@ -14,23 +14,28 @@ function LandingPage() {
     let ref = useRef([])
       let userRef = useRef(" ")
     let userEmail = sessionStorage.getItem('email')
+    
     if (sessionStorage.getItem("currentUser") === "true") {
+        try {
 
-        axios.get(`http://localhost:1337/user?email=${userEmail}`).then((res) => {
+            axios.get(`http://localhost:1337/user?email=${userEmail}`).then((res) => {
 
-            for (var i in res.data.datas) {
+                for (var i in res.data.datas) {
 
-                if (res.data.datas[i]["first_name"] === sessionStorage.getItem("forename") && res.data.datas[i]["last_name"] === sessionStorage.getItem("surname")) {
-                    ref.current = res.data.datas[i]
-                    SetCurrentUser(sessionStorage.getItem("currentUser"))
-                    userRef.current = currentUser
-                    console.log(ref.current)
+                    if (res.data.datas[i]["first_name"] === sessionStorage.getItem("forename") && res.data.datas[i]["last_name"] === sessionStorage.getItem("surname")) {
+                        ref.current = res.data.datas[i]
+                        SetCurrentUser(sessionStorage.getItem("currentUser"))
+                        userRef.current = currentUser
+                        console.log(ref.current)
+                    }
                 }
-            }
-        }).catch((err) => {
-            console.log(err.response.data)
-        })
-
+            }).catch((err) => {
+                console.log(err.response.data)
+            })
+        }
+        catch (e) {
+            console.log(e)
+        }
 
     }
 

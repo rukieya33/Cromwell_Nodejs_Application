@@ -7,8 +7,7 @@ import Login from './Login/Login.js';
 import LandingPage from './LandingPage/LandingPage.js';
 
 function App() { 
-    //const [isLoggedin, SetIsLoggedin] = useState(false);
-    //const [page, SetPage] = useState("logout");
+   
 
     return (
         
@@ -45,8 +44,11 @@ function App() {
                
       </header>
       <footer>
-
-     2024 Copyright &copy;
+                Contact Us:
+                <h4>Address: Engineer Park, 29-31 Alvis Rd, Sandycroft, Deeside CH5 2QB</h4>
+                <h4>Telephone: 0800 338877</h4>
+                <h4>Hours: Open  - Mon to Fri from 7am -7pm </h4>
+     2024 Cromwell Group (Holdings) Ltd &copy;
       </footer>
             </div>
       
