@@ -7,7 +7,12 @@
    - Postgresql
    - Visual Studio IDE or any ide of your choice
   
-2. Create the tables Register and Login with these fields:
+2. Download Cromwell_Nodejs_Application from Github.
+     - Download the application
+     - extract downloaded file to whichever directory of your choice
+     - Open the application in the IDE
+  
+3. Create the tables Register and Login with these fields:
      - Table register:
     first_name character varying COLLATE pg_catalog."default",
     last_name character varying COLLATE pg_catalog."default",
@@ -21,7 +26,7 @@
     login character varying COLLATE pg_catalog."default",
     CONSTRAINT credentials_pkey PRIMARY KEY (credentials_id)
 
-3. Install all packages in the react app and the node js backend app using npm install if not installed:
+4. Install all packages in the react app and the node js backend app using npm install if not installed:
    - navigate to the my-react-app folder and use the command "npm install" to install all packages for the react app
    - navigate to the my-react-app-backend/nodejs_backend folder and use the command "npm install" to install all packages for the nodejs app.
      
